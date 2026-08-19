@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Nanum+Myeongjo:wght@400;700&display=swap');
+
+:root{
+  --cream:#FFFBEF;
+  --card:#FFFFFF;
+  --apricot:#FBE7C9;
+  --amber:#E9A33A;       /* 선·점·아이콘 전용 — 글자에 쓰지 않는다 */
+  --terra:#A9532A;       /* 강조 글자·링크 */
+  --brown:#3C2415;       /* 본문 */
+  --brown-soft:#6B5344;
+  --line:rgba(60,36,21,.13);
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--cream);color:var(--brown);font-family:'Nanum Myeongjo',serif;line-height:1.8;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px;}
+
+/* ── 머리 ── */
+.masthead{background:linear-gradient(168deg,#FBE7C9 0%,#F6DCB8 55%,#EFCFA4 100%);color:var(--brown);text-align:center;padding:56px 22px 34px;border-bottom:1px solid rgba(233,163,58,.45);}
+.masthead h1{font-family:'Gowun Batang',serif;font-weight:700;font-size:33px;margin:0;letter-spacing:.04em;}
+.masthead .tag{font-family:'Gowun Dodum',sans-serif;color:var(--brown-soft);font-size:13.5px;margin-top:11px;letter-spacing:.02em;}
+.masthead .rule{width:46px;height:1px;background:var(--amber);margin:19px auto 0;}
+.masthead.slim{padding:40px 22px 26px;}
+.masthead.slim h1{font-size:26px;}
+
+/* ── 책 카드 (index) ── */
+.shelf{padding-top:30px;padding-bottom:60px;}
+.count{font-family:'Gowun Dodum',sans-serif;font-size:11.5px;color:var(--brown-soft);letter-spacing:.18em;margin:0 0 18px;}
+.book{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;margin-bottom:16px;transition:transform .16s ease,box-shadow .16s ease;}
+.book:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(60,36,21,.09);}
+.book .lang{font-family:'Gowun Dodum',sans-serif;font-size:11px;letter-spacing:.2em;color:var(--terra);margin:0 0 10px;}
+.book .es{font-family:'Gowun Batang',serif;font-weight:700;font-size:26px;letter-spacing:.02em;margin:0;line-height:1.35;}
+.book .ko{font-size:15px;color:var(--brown-soft);margin:6px 0 0;}
+.book .meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);}
+.book .chip{font-family:'Gowun Dodum',sans-serif;font-size:12px;color:var(--brown-soft);background:var(--apricot);border-radius:999px;padding:4px 12px;}
+.book .go{font-family:'Gowun Dodum',sans-serif;font-size:13px;color:var(--terra);margin-top:14px;}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:16px;padding:24px 26px;color:var(--brown-soft);font-size:14px;}
+
+/* ── 회차 목록 ── */
+.list{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 18px;}
+.card{display:flex;align-items:baseline;gap:15px;padding:16px 0;border-bottom:1px solid var(--line);transition:opacity .15s ease;}
+.card:last-child{border-bottom:none;}
+.card:hover{opacity:.62;}
+.card .date{flex:0 0 auto;font-family:'Gowun Dodum',sans-serif;font-size:12.5px;color:var(--brown-soft);white-space:nowrap;font-variant-numeric:tabular-nums;}
+.card .body{flex:1 1 auto;display:block;min-width:0;}
+.card .range{display:block;font-family:'Gowun Batang',serif;font-weight:700;font-size:16px;margin:0 0 4px;}
+.card .desc{display:block;font-size:14px;line-height:1.65;color:var(--brown-soft);margin:0;}
+.card .more{flex:0 0 auto;font-family:'Gowun Dodum',sans-serif;font-size:12.5px;color:var(--terra);white-space:nowrap;}
+
+/* ── 노트 본문 ── */
+.entry{padding-top:28px;padding-bottom:76px;}
+.back{font-family:'Gowun Dodum',sans-serif;font-size:12.5px;color:var(--brown-soft);display:inline-block;margin-bottom:22px;}
+.entry h2{font-family:'Gowun Batang',serif;font-weight:700;font-size:20px;margin:44px 0 6px;padding-bottom:10px;border-bottom:1px solid var(--amber);}
+.entry h3{font-family:'Gowun Batang',serif;font-weight:700;font-size:16.5px;color:var(--terra);margin:30px 0 10px;}
+.entry p{font-size:16px;line-height:1.9;}
+.entry strong{font-weight:700;color:var(--terra);}
+.entry code{font-family:'Gowun Dodum',sans-serif;font-size:.92em;background:var(--apricot);border-radius:4px;padding:1px 6px;color:var(--brown);}
+.entry ul,.entry ol{padding-left:22px;}
+.entry li{font-size:15.5px;line-height:1.85;margin-bottom:5px;}
+
+.facts{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:0 12px 12px 0;padding:18px 22px;margin:0 0 8px;}
+.facts p{margin:5px 0;font-size:15px;}
+
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:22px 0;}
+.box .bt{font-family:'Gowun Batang',serif;font-weight:700;font-size:15.5px;color:var(--terra);margin:0 0 10px;}
+.box p{font-size:15px;line-height:1.85;margin:9px 0;}
+.box p:last-child{margin-bottom:0;}
+.box.warn{border-left:3px solid var(--amber);}
+
+/* 원문 · 발음 · 해석 3줄 */
+.tri{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0;}
+.tri .es{font-size:16.5px;line-height:1.75;font-weight:700;margin:0 0 10px;}
+.tri .pr{font-family:'Gowun Dodum',sans-serif;font-size:15px;line-height:1.75;color:var(--terra);margin:0 0 10px;padding-left:13px;border-left:2px solid var(--amber);}
+.tri .ko{font-size:15.5px;line-height:1.8;color:var(--brown-soft);margin:0;}
+
+.tablewrap{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch;}
+table{border-collapse:collapse;width:100%;min-width:420px;background:var(--card);font-size:14.5px;}
+th,td{border:1px solid var(--line);padding:10px 13px;text-align:left;vertical-align:top;line-height:1.65;}
+th{background:var(--apricot);font-family:'Gowun Dodum',sans-serif;font-weight:400;font-size:13px;letter-spacing:.03em;white-space:nowrap;}
+
+.steps{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px 20px 42px;margin:16px 0;}
+.steps li{margin-bottom:9px;}
+.steps li:last-child{margin-bottom:0;}
+
+.tip{font-family:'Gowun Dodum',sans-serif;font-size:13.5px;line-height:1.8;color:var(--brown-soft);background:var(--apricot);border-radius:10px;padding:15px 18px;margin:20px 0;}
+
+footer{background:var(--apricot);color:var(--brown-soft);text-align:center;font-family:'Gowun Dodum',sans-serif;font-size:12px;padding:26px 22px;letter-spacing:.02em;border-top:1px solid rgba(233,163,58,.45);}
+footer .amber{color:var(--terra);}
+
+@media(max-width:520px){
+  .masthead{padding:46px 20px 28px;}
+  .masthead h1{font-size:27px;}
+  .book{padding:22px 20px;}
+  .book .es{font-size:22px;}
+  .card{flex-wrap:wrap;gap:6px 12px;padding:15px 0;}
+  .card .more{margin-left:auto;}
+  .entry h2{font-size:18.5px;}
+  .tri{padding:16px 16px;}
+  .tri .es{font-size:15.5px;}
+}
