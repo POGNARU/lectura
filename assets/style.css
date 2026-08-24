@@ -103,3 +103,10 @@ footer .amber{color:var(--terra);}
   .tri{padding:16px 16px;}
   .tri .es{font-size:15.5px;}
 }
+
+/* 식구 크레딧 — 그 페이지를 지은 식구를 이름·이모지와 함께 밝힌다 (2026-08-25) */
+footer .credit{margin-top:12px;padding-top:11px;border-top:1px solid rgba(233,163,58,.4);
+  font-size:11.5px;line-height:1.9;color:var(--brown-soft);opacity:.92;}
+footer .credit .who{white-space:nowrap;}
+footer .credit .who b{font-weight:400;color:var(--terra);}
+footer .credit .sep{color:rgba(233,163,58,.75);margin:0 7px;}
