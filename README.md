@@ -24,7 +24,7 @@ index.html                       책장 — 읽고 있는 책 카드
 
 | 책 | 회차 | 시작 |
 |---|---|---|
-| **El Alquimista** (파울로 코엘료 · 스페인어판) | 11 | 2026-08-19 |
+| **El Alquimista** (파울로 코엘료 · 스페인어판) | 12 | 2026-08-19 |
 
 낭독 교본은 Tomás Leighton 낭독(Sant Jordi Asociados, 4시간 47분).
 
